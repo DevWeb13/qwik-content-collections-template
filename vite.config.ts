@@ -24,10 +24,6 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
  */
 export default defineConfig(({ command, mode }): UserConfig => {
   return {
-    define: {
-      // (optional) enables debugging in workbox
-      "process.env.NODE_ENV": JSON.stringify("development"),
-    },
     plugins: [qwikCity(), qwikVite(), tsconfigPaths(), contentCollections(), qwikPwa({})],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
