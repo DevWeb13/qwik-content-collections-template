@@ -14,7 +14,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "incremental": true,
