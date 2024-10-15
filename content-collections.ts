@@ -1,3 +1,5 @@
+// content-collections.ts
+
 import { defineCollection, defineConfig } from '@content-collections/core';
 import { compileMarkdown } from '@content-collections/markdown';
 const posts = defineCollection({
