@@ -22,12 +22,12 @@
     "outDir": "tmp",
     "noEmit": true,
     "paths": {
+      "content-collections": [
+        "./.content-collections/generated"
+      ],
       "~/*": [
         "./src/*"
       ],
-      "content-collections": [
-        "./.content-collections/generated"
-      ]
     }
   },
   "files": [
