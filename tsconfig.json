@@ -27,8 +27,8 @@
       ],
       "content-collections": [
         "./.content-collections/generated"
-      ]
-    }
+      ],
+    },
   },
   "files": [
     "./.eslintrc.cjs"
