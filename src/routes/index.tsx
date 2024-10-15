@@ -1,5 +1,5 @@
 import { component$, useStore } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { Link, type DocumentHead } from '@builder.io/qwik-city';
 import { allPosts } from 'content-collections';
 import { filterSearchPosts } from '~/utils/posts';
 
@@ -29,6 +29,8 @@ export default component$(() => {
           allPostsStore.allPosts = filterSearchPosts(search);
         }}
       />
+
+      <Link href='/about'>About</Link>
     </main>
   );
 });

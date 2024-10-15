@@ -8,6 +8,7 @@ import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import pkg from "./package.json";
 import contentCollections from "@content-collections/vite";
+import { qwikPwa } from "@qwikdev/pwa";
 
 
 type PkgDep = Record<string, string>;
@@ -23,7 +24,11 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
  */
 export default defineConfig(({ command, mode }): UserConfig => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), contentCollections()],
+    define: {
+      // (optional) enables debugging in workbox
+      "process.env.NODE_ENV": JSON.stringify("development"),
+    },
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), contentCollections(), qwikPwa({})],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
       // Put problematic deps that break bundling here, mostly those with binaries.
