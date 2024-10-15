@@ -37,7 +37,6 @@
     "src",
     "./*.d.ts",
     "./*.config.ts",
-    "content-collections.ts",
-    "assets.config.mjs"
+    "content-collections.ts"
   ]
 }
