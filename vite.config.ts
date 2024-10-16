@@ -32,7 +32,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
       // enables debugging in workbox
       "process.env.NODE_ENV": JSON.stringify("development"),
     },
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths(),  qwikPwa(config), contentCollections()],
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths(),  qwikPwa({}), contentCollections()],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
       // Put problematic deps that break bundling here, mostly those with binaries.

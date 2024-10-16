@@ -9,6 +9,7 @@ const posts = defineCollection({
   schema: (z) => ({
     title: z.string(),
     summary: z.string(),
+    content: z.string(),
   }),
 });
 
