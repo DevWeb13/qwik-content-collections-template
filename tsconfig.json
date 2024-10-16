@@ -22,11 +22,11 @@
     "outDir": "tmp",
     "noEmit": true,
     "paths": {
-      "content-collections": [
-        "./.content-collections/generated"
-      ],
       "~/*": [
         "./src/*"
+      ],
+      "content-collections": [
+        "./.content-collections/generated"
       ]
     }
   },
@@ -37,7 +37,6 @@
     "src",
     "./*.d.ts",
     "./*.config.ts",
-    "content-collections.ts",
-    "assets.config.mjs"
+    "content-collections.ts"
   ]
 }
