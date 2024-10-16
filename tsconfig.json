@@ -14,13 +14,18 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "incremental": true,
     "isolatedModules": true,
     "outDir": "tmp",
     "noEmit": true,
+    "types": [
+      "node",
+      "vite/client",
+      "@qwikdev/pwa"
+    ],
     "paths": {
       "~/*": [
         "./src/*"
