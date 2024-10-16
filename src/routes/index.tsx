@@ -2,7 +2,7 @@ import type { JSXChildren, JSXNode, Signal } from '@builder.io/qwik';
 import { component$, useStore } from '@builder.io/qwik';
 import { Link, type DocumentHead } from '@builder.io/qwik-city';
 import { allPosts } from 'content-collections';
-import { filterSearchPosts } from '~/utils/posts';
+// import { filterSearchPosts } from '~/utils/posts';
 
 export default component$(() => {
   const allPostsStore = useStore({
@@ -51,14 +51,14 @@ export default component$(() => {
           )
         )}
       </ul>
-      <input
+      {/* <input
         type='text'
         placeholder='Search posts'
         onInput$={(e) => {
           const search = (e.target as HTMLInputElement).value;
           allPostsStore.allPosts = filterSearchPosts(search);
         }}
-      />
+      /> */}
 
       <Link href='/about'>About</Link>
     </main>
