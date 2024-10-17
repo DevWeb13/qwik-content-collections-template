@@ -42,5 +42,10 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "serviceworker": {
+    "src": "/service-worker.js",
+    "scope": "/",
+    "update_via_cache": "all"
+  }
 }
